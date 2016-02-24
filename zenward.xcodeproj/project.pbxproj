@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		215A129B1C7E009300370216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A129A1C7E009300370216 /* AppDelegate.swift */; };
-		215A129D1C7E009300370216 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A129C1C7E009300370216 /* ViewController.swift */; };
 		215A12A01C7E009300370216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215A129E1C7E009300370216 /* Main.storyboard */; };
 		215A12A21C7E009400370216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215A12A11C7E009400370216 /* Assets.xcassets */; };
 		215A12AD1C7E009400370216 /* zenwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A12AC1C7E009400370216 /* zenwardTests.swift */; };
 		215A12B81C7E009400370216 /* zenwardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A12B71C7E009400370216 /* zenwardUITests.swift */; };
 		215A12D21C7E06FA00370216 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 215A12D11C7E06FA00370216 /* Podfile */; };
+		215A12D41C7E099A00370216 /* ViewController in Resources */ = {isa = PBXBuildFile; fileRef = 215A12D31C7E099A00370216 /* ViewController */; };
 		C1C4D0D32A02A38A66B9EFE8 /* Pods_zenward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDFD61B33F24B437859AE0F /* Pods_zenward.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		215A12971C7E009300370216 /* zenward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zenward.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		215A129A1C7E009300370216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		215A129C1C7E009300370216 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		215A129F1C7E009300370216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		215A12A11C7E009400370216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		215A12A31C7E009400370216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		215A12B71C7E009400370216 /* zenwardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zenwardUITests.swift; sourceTree = "<group>"; };
 		215A12B91C7E009400370216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		215A12D11C7E06FA00370216 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		215A12D31C7E099A00370216 /* ViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewController; sourceTree = "<group>"; };
 		349A736059B4ED062AF7B22E /* Pods-zenward.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.release staging.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.release staging.xcconfig"; sourceTree = "<group>"; };
 		94FCC9446CF90097E187A777 /* Pods-zenward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.release.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.release.xcconfig"; sourceTree = "<group>"; };
 		9968BEF8805A181855C1512C /* Pods-zenward.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.debug staging.xcconfig"; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 		215A12991C7E009300370216 /* zenward */ = {
 			isa = PBXGroup;
 			children = (
+				215A12D31C7E099A00370216 /* ViewController */,
 				215A129A1C7E009300370216 /* AppDelegate.swift */,
-				215A129C1C7E009300370216 /* ViewController.swift */,
 				215A129E1C7E009300370216 /* Main.storyboard */,
 				215A12A11C7E009400370216 /* Assets.xcassets */,
 				215A12A31C7E009400370216 /* Info.plist */,
@@ -263,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				215A12D21C7E06FA00370216 /* Podfile in Resources */,
+				215A12D41C7E099A00370216 /* ViewController in Resources */,
 				215A12A21C7E009400370216 /* Assets.xcassets in Resources */,
 				215A12A01C7E009300370216 /* Main.storyboard in Resources */,
 			);
@@ -337,7 +338,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				215A129D1C7E009300370216 /* ViewController.swift in Sources */,
 				215A129B1C7E009300370216 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
