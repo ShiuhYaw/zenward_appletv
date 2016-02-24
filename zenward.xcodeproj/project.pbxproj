@@ -13,6 +13,8 @@
 		215A12A21C7E009400370216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215A12A11C7E009400370216 /* Assets.xcassets */; };
 		215A12AD1C7E009400370216 /* zenwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A12AC1C7E009400370216 /* zenwardTests.swift */; };
 		215A12B81C7E009400370216 /* zenwardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215A12B71C7E009400370216 /* zenwardUITests.swift */; };
+		215A12D21C7E06FA00370216 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 215A12D11C7E06FA00370216 /* Podfile */; };
+		C1C4D0D32A02A38A66B9EFE8 /* Pods_zenward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDFD61B33F24B437859AE0F /* Pods_zenward.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,13 @@
 		215A12B31C7E009400370216 /* zenwardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zenwardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		215A12B71C7E009400370216 /* zenwardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zenwardUITests.swift; sourceTree = "<group>"; };
 		215A12B91C7E009400370216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		215A12D11C7E06FA00370216 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		349A736059B4ED062AF7B22E /* Pods-zenward.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.release staging.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.release staging.xcconfig"; sourceTree = "<group>"; };
+		94FCC9446CF90097E187A777 /* Pods-zenward.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.release.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.release.xcconfig"; sourceTree = "<group>"; };
+		9968BEF8805A181855C1512C /* Pods-zenward.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.debug staging.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.debug staging.xcconfig"; sourceTree = "<group>"; };
+		ACDFD61B33F24B437859AE0F /* Pods_zenward.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zenward.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC2A88D0041E1AE8030678D /* Pods-zenward.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.appstore.xcconfig"; sourceTree = "<group>"; };
+		E37D3E7CB0A203750A4668CB /* Pods-zenward.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zenward.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zenward/Pods-zenward.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C4D0D32A02A38A66B9EFE8 /* Pods_zenward.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +85,13 @@
 		215A128E1C7E009300370216 = {
 			isa = PBXGroup;
 			children = (
+				215A12D11C7E06FA00370216 /* Podfile */,
 				215A12991C7E009300370216 /* zenward */,
 				215A12AB1C7E009400370216 /* zenwardTests */,
 				215A12B61C7E009400370216 /* zenwardUITests */,
 				215A12981C7E009300370216 /* Products */,
+				B2BF1443B77501D0328617FE /* Pods */,
+				87ED1E9FB3005B159958F528 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +135,26 @@
 			path = zenwardUITests;
 			sourceTree = "<group>";
 		};
+		87ED1E9FB3005B159958F528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACDFD61B33F24B437859AE0F /* Pods_zenward.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2BF1443B77501D0328617FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E37D3E7CB0A203750A4668CB /* Pods-zenward.debug.xcconfig */,
+				9968BEF8805A181855C1512C /* Pods-zenward.debug staging.xcconfig */,
+				94FCC9446CF90097E187A777 /* Pods-zenward.release.xcconfig */,
+				ADC2A88D0041E1AE8030678D /* Pods-zenward.appstore.xcconfig */,
+				349A736059B4ED062AF7B22E /* Pods-zenward.release staging.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 215A12BC1C7E009400370216 /* Build configuration list for PBXNativeTarget "zenward" */;
 			buildPhases = (
+				9C27BC2187212F8C0A2CE9FF /* Check Pods Manifest.lock */,
 				215A12931C7E009300370216 /* Sources */,
 				215A12941C7E009300370216 /* Frameworks */,
 				215A12951C7E009300370216 /* Resources */,
+				B10540E105F804ACDAA1DABA /* Embed Pods Frameworks */,
+				CB69AE312234C60EDD0B0DE4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215A12D21C7E06FA00370216 /* Podfile in Resources */,
 				215A12A21C7E009400370216 /* Assets.xcassets in Resources */,
 				215A12A01C7E009300370216 /* Main.storyboard in Resources */,
 			);
@@ -246,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C27BC2187212F8C0A2CE9FF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B10540E105F804ACDAA1DABA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zenward/Pods-zenward-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB69AE312234C60EDD0B0DE4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zenward/Pods-zenward-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		215A12931C7E009300370216 /* Sources */ = {
@@ -387,6 +472,7 @@
 		};
 		215A12BD1C7E009400370216 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E37D3E7CB0A203750A4668CB /* Pods-zenward.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -399,6 +485,7 @@
 		};
 		215A12BE1C7E009400370216 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FCC9446CF90097E187A777 /* Pods-zenward.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -506,6 +593,7 @@
 		};
 		215A12C61C7E01D900370216 /* Debug Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9968BEF8805A181855C1512C /* Pods-zenward.debug staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -582,6 +670,7 @@
 		};
 		215A12CA1C7E01EC00370216 /* Release Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349A736059B4ED062AF7B22E /* Pods-zenward.release staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -657,6 +746,7 @@
 		};
 		215A12CE1C7E01F400370216 /* AppStore */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC2A88D0041E1AE8030678D /* Pods-zenward.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -716,6 +806,7 @@
 				215A12CA1C7E01EC00370216 /* Release Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		215A12BF1C7E009400370216 /* Build configuration list for PBXNativeTarget "zenwardTests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +818,7 @@
 				215A12CB1C7E01EC00370216 /* Release Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		215A12C21C7E009400370216 /* Build configuration list for PBXNativeTarget "zenwardUITests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +830,7 @@
 				215A12CC1C7E01EC00370216 /* Release Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
